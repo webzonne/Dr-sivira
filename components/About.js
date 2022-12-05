@@ -9,7 +9,7 @@ export default function About() {
         <>
             <div className={aboutStyle.contentAbout}>
                 <div className={aboutStyle.contentTitle}>
-                    <h2>QUIEN SOY</h2>
+                    <h2>QUIEN SOYY</h2>
                     <div className='container'>
                         <div className={aboutStyle.filaAbout}>
                             <div className='row'>
