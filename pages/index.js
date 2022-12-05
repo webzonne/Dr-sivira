@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Slider from '../components/slider'
+import Slider from '../components/Slider'
 import Footer from '../components/Footer'
 import About from '../components/About'
 import Contacto from '../components/Contacto'

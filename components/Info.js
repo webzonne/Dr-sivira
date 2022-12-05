@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
-import infoStyle from '../styles/info.module.css';
+import infoStyle from '../styles/Info.module.css';
 // IMAGENES
 import boxesImage1 from '../assets/image/boxesImage1.jpg';
 import boxesImage2 from '../assets/image/boxesImage2.jpg';
