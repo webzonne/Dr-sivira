@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap');
+.contentSlider1{
+    position: absolute;
+    top: 29%;
+    left:39%;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+.contentSlider1 h1{
+    font-size: 55px;
+    font-weight: 800;
+    margin-bottom: 47px;
+}
+.contentSlider1 p{
+    font-size: 32px;
+}
+.contentSlider1 p{
+    margin-bottom:0;
+}
+/* SLIDER 2 */
+.contentSlider2{
+    position: absolute;
+    top: 29%;
+    left:39%;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+.contentSlider2 h1{
+    font-size: 55px;
+    font-weight: 800;
+    max-width: 585px; 
+}
+.contentSlider2 span{
+    color: #5B9BDA;
+    font-size:55px;
+    font-weight: 800;
+}
+/* SLIDER 3 */
+.contentSlider3{
+    position: absolute;
+    top: 29%;
+    left:39%;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+.contentSlider3 h1{
+    font-size:46px;
+    font-weight: 800;
+    max-width: 705px; 
+}
+.contentSlider3 span{
+    color: #5B9BDA;
+    font-size:48px;
+    font-weight: 800;
+}

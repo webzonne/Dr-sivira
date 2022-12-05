@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap');
+.contentFooter{
+    display: flex;
+    margin-top: 90px;
+    width: 100%;
+    justify-content: space-between;
+}
+.subdivFooter{
+   width: auto;
+}
+.subdivFooter a{
+    text-decoration: none;
+    color: #4F4E4E;
+    font-size: 16px;
+}
+.titleSubdiv{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color: #4F4E4E;
+    font-size:17px;
+    margin-bottom:35px;
+}
+/* LOGO */
+.logoFooterStyle img{
+    width: 100%;
+    height: auto;
+}
+.descriptionLogo{
+    font-family: 'Open Sans', sans-serif;
+    color: #4F4E4E;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 15px;
+    max-width:274px;
+}
+
+/* CONTACTO */
+
+.contentWhasapt{
+    display: flex;
+    align-items:center;
+    margin-bottom: 18px;
+}
+.contentWhasapt a{
+    padding-left: 10px;
+    font-size: 15px;
+}
+.contentGmail{
+    display: flex;
+    align-items:center;
+    margin-bottom: 18px;  
+}
+.contentGmail a{
+    padding-left: 10px;
+    font-size: 15px;
+}
+.contentGmail img{
+    margin-left: -3px;
+}
+/* MAPA DEL SITIO */
+.contentMapa p{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+/* REDES SOCIALES */
+.contentRedesS{
+    display: flex;
+    justify-content: space-between;
+}
+/* INFORMACION */
+.contentInfo p{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+/* LINEA AZUL */
+.lineBlue{
+    width: 100%;
+    height: 1px;
+    background: #0454A3;
+    margin: 20px 0;
+}
+/* COPY RIGHT */
+.copyrightContent{
+    text-align: center;
+    font-size: 13px;
+    color: #4F4E4E;
+}
+@media (max-width:1000px){
+    .titleSubdiv{
+        font-size: 14px;
+    }
+    /* LOGO */
+    .descriptionLogo{
+        font-size: 11px;
+    }
+    /* CONTACTO */
+    .contentWhasapt a{
+        font-size: 12px;
+    }
+    .contentGmail a{
+        font-size: 12px;
+    }
+    /* MAPA DEL SITIO */
+    .contentMapa p{
+        font-size: 12px;
+    }
+    /* INFORMACION */
+    .contentInfo p{
+        font-size: 12px;
+    }
+}
+@media (max-width:990px){
+    .descriptionLogo{
+        max-width:184px;
+    }
+    .logoFooterStyle img{
+        width:169px;
+    }
+}
+@media (max-width:780px){
+    .subdivFooter{
+        width: 100%;
+        margin: auto;
+        margin-bottom:35px;
+     }
+     .contentFooter{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+     .titleSubdiv{
+        text-align: center;
+     }
+     /* LOGO */
+     .logoFooterStyle{
+        max-width: 246px;
+        margin: auto;
+     }
+     .descriptionLogo{
+        margin: auto;
+        margin-top: 20px;
+        max-width: 246px;
+     }
+    
+     /* CONTACTO */
+     .contentContact{
+        max-width: 246px;
+        margin: auto;
+     }
+     .contentWhasapt{
+        justify-content: center;
+     }
+     .contentGmail{
+        justify-content: center;
+     }
+     /* MAPA DEL SITIO */
+     .contentMapa{
+        max-width: 246px;
+        margin: auto;
+        text-align: center; 
+     }
+     /* INFORMACION */
+     .contentInfo{
+        max-width: 246px;
+        margin: auto;
+        text-align: center; 
+     }
+     /* REDES SOCIALES */
+     .contentRedesS{
+        max-width: 150px;
+        margin: auto;
+     }
+     .contentRedesS img{
+        width: 24px;
+        height: auto;
+     }
+     /* LINEA AZUL */
+     .lineBlue{
+        max-width: 255px;
+        margin: auto;
+        margin-bottom: 20px;
+     }
+}
