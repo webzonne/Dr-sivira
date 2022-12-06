@@ -12,7 +12,6 @@ export default function Contacto() {
                 style={{
                     background: 'linear-gradient(180deg, rgba(4, 84, 163, 0.12) 0%, rgba(4, 92, 164, 0.12) 100%)',
                     position: 'relative',
-                    paddingBottom: '400px'
                 }}
             >
                 <div className={contactoStyle.contentContacto}
@@ -23,7 +22,7 @@ export default function Contacto() {
                         backgroundRepeat: 'no-repeat',
                         backgroundPosition: 'center center',
                         backgroundSize: 'cover',
-                        paddingBottom:'210px'
+                        paddingBottom:'400px'
                     }}
                     id='Contacto'>
                     <h2>CONTÁCTAME PARA AGENDAR UNA CITA</h2>
