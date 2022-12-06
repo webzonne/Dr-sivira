@@ -22,7 +22,6 @@ export default function Contacto() {
                         backgroundRepeat: 'no-repeat',
                         backgroundPosition: 'center center',
                         backgroundSize: 'cover',
-                        paddingBottom:'400px'
                     }}
                     id='Contacto'>
                     <h2>CONTÁCTAME PARA AGENDAR UNA CITA</h2>
