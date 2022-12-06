@@ -2,6 +2,12 @@
 .contentContacto{
     background: linear-gradient(180deg, rgba(4, 84, 163, 0.12) 0%, rgba(4, 92, 164, 0.12) 100%);
     position: relative;
+    padding-bottom: 400px;
+}
+@media (max-width:990px){
+    .contentContacto{
+        padding-bottom:120px;
+    }
 }
 .contentContacto::after{
     content: '';
@@ -34,7 +40,23 @@
 .contentPerfilContacto img{
     z-index: 2;
     position: relative;
+    width:100%;
+    height: auto;
 }
+@media (max-width:992px){
+    .contentContacto h2{
+        margin-bottom: 95px;
+    }
+    .contentPerfilContacto{
+        margin: auto;
+        text-align: center;
+    }
+    .contentPerfilContacto img{
+        width: 70%;
+        margin-bottom:90px;
+    }
+}
+
 .contentFormContacto{
     background: white;
     background: #FEFEFE;
@@ -42,7 +64,6 @@
     padding: 30px 60px 90px 45px;
     position: relative;
     z-index: 2;
-    margin-bottom:400px;
 }
 .contentFormContacto label{
     font-family: 'Open Sans', sans-serif;

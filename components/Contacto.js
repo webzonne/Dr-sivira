@@ -7,16 +7,16 @@ import Image from 'next/image';
 export default function Contacto() {
     return (
         <>
-            <div className={contactoStyle.contentContacto}>
+            <div className={contactoStyle.contentContacto} id='Contacto'>
                 <h2>CONTÁCTAME PARA AGENDAR UNA CITA</h2>
                 <div className='container'>
-                    <div className='row'>
-                        <div className='col-xl-6'>
+                    <div className='row d-flex justify-content-between align-items-lg-center align-items-xl-start'>
+                        <div className='col-md-12 col-lg-6 col-xl-6'>
                             <div className={contactoStyle.contentPerfilContacto}>
                                 <Image src={perfilContacto} alt='perfil-contacto' />
                             </div>
                         </div>
-                        <div className='col-xl-6'>
+                        <div className='col-md-12 col-lg-6 col-xl-6'>
                             <div className={contactoStyle.contentFormContacto}>
                                 <form>
                                     <label>Nombre</label>

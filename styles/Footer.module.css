@@ -134,13 +134,13 @@
      }
      /* LOGO */
      .logoFooterStyle{
-        max-width: 246px;
-        margin: auto;
+        text-align: center;
      }
      .descriptionLogo{
         margin: auto;
         margin-top: 20px;
-        max-width: 246px;
+        width: 50%;
+        text-align: center;
      }
     
      /* CONTACTO */

@@ -29,8 +29,8 @@ export default function Info() {
                             con DOLOR, no es realmente vivir
                         </h2>
                     </div>
-                    <div className='row'>
-                        <div className='col-xl-4'>
+                    <div className='row d-flex justify-content-md-center'>
+                        <div className='col-lg-6 col-xl-4'>
                             <div className={infoStyle.boxes}>
                                 <div className={infoStyle.contentImagenBox}>
                                     <Image src={boxesImage1} alt='imagen-desgaste-articular' />
@@ -47,7 +47,7 @@ export default function Info() {
                             </div>
                         </div>
                         {/* DOS */}
-                        <div className='col-xl-4'>
+                        <div className='col-lg-6 col-xl-4'>
                             <div className={infoStyle.boxes}>
                                 <div className={infoStyle.contentImagenBox}>
                                     <Image src={boxesImage2} alt='Abordaje-inferior-de-cadera' />
@@ -64,7 +64,7 @@ export default function Info() {
                             </div>
                         </div>
                         {/* TRES */}
-                        <div className='col-xl-4'>
+                        <div className='col-lg-6 col-xl-4'>
                             <div className={infoStyle.boxes}>
                                 <div className={infoStyle.contentImagenBox}>
                                     <Image src={boxesImage3} alt='Gonartrosis' />
@@ -81,7 +81,7 @@ export default function Info() {
                             </div>
                         </div>
                         {/* CUATRO */}
-                        <div className='col-xl-4'>
+                        <div className='col-lg-6 col-xl-4'>
                             <div className={infoStyle.boxes}>
                                 <div className={infoStyle.contentImagenBox}>
                                     <Image src={boxesImage4} alt='necrosisavascular' />
@@ -98,7 +98,7 @@ export default function Info() {
                             </div>
                         </div>
                         {/* CINCO */}
-                        <div className='col-xl-4'>
+                        <div className='col-lg-6 col-xl-4'>
                             <div className={infoStyle.boxes}>
                                 <div className={infoStyle.contentImagenBox}>
                                     <Image src={boxesImage5} alt='Artoplastia' />
@@ -115,7 +115,7 @@ export default function Info() {
                             </div>
                         </div>
                         {/* SEIS */}
-                        <div className='col-xl-4'>
+                        <div className='col-lg-6 col-xl-4'>
                             <div className={infoStyle.boxes}>
                                 <div className={infoStyle.contentImagenBox}>
                                     <Image src={boxesImage6} alt='necrosisavascular' />

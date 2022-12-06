@@ -8,7 +8,7 @@ import sliderStyle from '../styles/Slider.module.css';
 
 export default function slider() {
   return (
-    <div>
+    <div id='Inicio'>
       <Navbar />
       <div
         id="carouselExampleIndicators"

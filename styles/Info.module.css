@@ -18,6 +18,11 @@
 }
 .boxes{
     margin-bottom: 100px;
+    width: 100%;
+}
+.contentImagenBox img{
+   width: 100%;
+   height: auto;
 }
 .titleBox h4{
     margin: 20px 0;
@@ -31,6 +36,7 @@
     line-height: 1.7;
     font-size: 16px;
     color: #4F4E4E;
+    max-width: 391px;
 }
 .buttonBox button{
     background: #0454A3;
@@ -40,6 +46,18 @@
     font-family: 'Open Sans', sans-serif;
     border: none;
     padding: 15px 20px;
+}
+@media (max-width:991px){
+   .boxes{
+    max-width:391px;
+    margin: auto;
+    margin-bottom: 100px;
+   }
+}
+@media (max-width:600px){
+   .titleInfo h2{
+      font-size:30px;
+   }
 }
  /* BOXES MORE */
  .allContentBoxesMore{

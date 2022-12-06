@@ -7,7 +7,7 @@ import comillasAbout from '../assets/image/comillas-about.png';
 export default function About() {
     return (
         <>
-            <div className={aboutStyle.contentAbout}>
+            <div className={aboutStyle.contentAbout} id='About'>
                 <div className={aboutStyle.contentTitle}>
                     <h2>QUIEN SOY</h2>
                     <div className='container'>
