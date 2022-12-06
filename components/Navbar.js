@@ -7,7 +7,7 @@ export default function Navbar() {
     <div>
       <nav className="navbar navbar-expand-lg bg-light">
     <div className="container">
-      <a className="navbar-brand" href="#">
+      <a className="navbar-brand" href="#Inicio">
         <div className='logo-nav-content'>
             <Image src={logoNav} alt='logo-nav'/>
         </div>

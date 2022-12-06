@@ -9,6 +9,11 @@ export default function Banner() {
             backgroundImage: `url(${bgBanner.src})`,
             width: '100%',
             height: '100%',
+            position:'relative',
+            zIndex:2,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center center',
+            backgroundSize: 'cover',
             paddingTop: '65px',
             paddingBottom: '62px',
             marginBottom: '200px'

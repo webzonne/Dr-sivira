@@ -1,15 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap');
-.contentContacto{
-    background: linear-gradient(180deg, rgba(4, 84, 163, 0.12) 0%, rgba(4, 92, 164, 0.12) 100%);
-    position: relative;
-    padding-bottom: 400px;
-}
 @media (max-width:990px){
     .contentContacto{
         padding-bottom:120px;
     }
 }
-.contentContacto::after{
+/* .contentContacto::after{
     content: '';
     display: block;
     position: absolute;
@@ -23,7 +18,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-}
+} */
 
 .contentContacto h2{
     text-align: center;
@@ -42,6 +37,7 @@
     position: relative;
     width:100%;
     height: auto;
+    opacity: 1;
 }
 @media (max-width:992px){
     .contentContacto h2{

@@ -47,14 +47,14 @@ export default function slider() {
             </div>
             {/* <img src={slider1} className="d-block w-100" alt="1" /> */}
           </div>
-          <div className="carousel-item position-relative">
+          <div className="carousel-item  position-relative">
             <Image src={slider1} width={1920} height={543} className="d-block w-100" alt='2' />
             <div className={sliderStyle.contentSlider2}>
               <h1>Con mas de  <span>25 años</span> de experiencia</h1>
             </div>
             {/* <img src={slider2} className="d-block w-100" alt="2" /> */}
           </div>
-          <div className="carousel-item position-relative">
+          <div className="carousel-item  position-relative">
             <Image src={slider3} width={1920} height={543} className="d-block w-100" alt='3' />
             <div className={sliderStyle.contentSlider3}>
               <h1>No te acostumbres al <span>DOLOR</span>, vivir con dolor no es realmente vivir</h1>
