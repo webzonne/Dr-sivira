@@ -26,11 +26,11 @@ export default function Footer() {
                         <div className={footerStyle.contentContact}>
                             <div className={footerStyle.contentWhasapt}>
                                 <Image src={logoWhatsContact} alt='logo-whatsapp-contacto' />
-                                <a href='#'>+58 412-8051790</a>
+                                <a target="_blank" href='https://walink.co/39ce2a'>+58 412-8051790</a>
                             </div>
                             <div className={footerStyle.contentGmail}>
                                 <Image src={logoGmailWhasappt} alt='logo-gmail-contacto' />
-                                <a href='#'>drsivira@gmail.com</a>
+                                <a target="_blank" href='mailto:drsivira@gmail.com'>drsivira@gmail.com</a>
                             </div>
                         </div>
                     </div>
@@ -38,9 +38,9 @@ export default function Footer() {
                     <div className={footerStyle.subdivFooter}>
                         <h6 className={footerStyle.titleSubdiv}>MAPA DEL SITIO</h6>
                         <div className={footerStyle.contentMapa}>
-                            <a href='#'><p>Inicio</p></a>
-                            <a href='#'><p>Sobre mi</p></a>
-                            <a href='#'><p>Contacto</p></a>
+                            <a href='#Inicio'><p>Inicio</p></a>
+                            <a href='#About'><p>Sobre mi</p></a>
+                            <a href='#Contacto'><p>Contacto</p></a>
                         </div>
                     </div>
                     {/* INFORMACION */}
@@ -57,9 +57,15 @@ export default function Footer() {
                     <div className={footerStyle.subdivFooter}>
                         <h6 className={footerStyle.titleSubdiv}>REDES SOCIALES</h6>
                         <div className={footerStyle.contentRedesS}>
-                            <Image src={logoTiktok} alt='logo-tiktok' />
-                            <Image src={logoWhatsapp} alt='logo-whatsapp' />
-                            <Image src={logoInstagram} alt='logo-instagram' />
+                            <a target="_blank" href='https://www.tiktok.com/@drsivira'>
+                                <Image src={logoTiktok} alt='logo-tiktok' />
+                            </a>
+                            <a target="_blank" href='https://walink.co/39ce2a'>
+                                <Image src={logoWhatsapp} alt='logo-whatsapp' />
+                            </a>
+                            <a target="_blank" href='https://www.instagram.com/drsivira/'>
+                                <Image src={logoInstagram} alt='logo-instagram' />
+                            </a>
                         </div>
                     </div>
                 </div>
