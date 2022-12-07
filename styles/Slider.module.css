@@ -82,21 +82,21 @@
 }
 @media (max-width:796px){
     .contentSlider2 h1{
-        font-size: 39px;
+        font-size:30px;
     }
     .contentSlider2 span{
         font-size:43px;
     }
 }
-@media (max-width:400px){
+@media (max-width:472px){
     .contentSlider2{
         position: absolute;
-        top:39%;
+        top:37%;
         left:34%;
     }
     .contentSlider2 h1{
-        font-size: 29px;
-        max-width: 500px; 
+        font-size:29px;
+        max-width: 267px; 
     } 
     .contentSlider2 span{
         font-size:32px;

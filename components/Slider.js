@@ -1,8 +1,12 @@
 import React from 'react'
 import Image from 'next/image';
+// IMAGENES
 import slider1 from '../assets/image/slider-1.jpg'
+import sliderMobile1 from '../assets/image/slider-mobile1.jpg'
 import slider2 from '../assets/image/slider-2.jpg'
+import sliderMobile2 from '../assets/image/slider-mobile2.jpg'
 import slider3 from '../assets/image/slider-3.jpg'
+import sliderMobile3 from '../assets/image/slider-mobile3.jpg'
 import Navbar from './Navbar';
 import sliderStyle from '../styles/Slider.module.css';
 
@@ -38,8 +42,13 @@ export default function slider() {
           />
         </div>
         <div className="carousel-inner">
-          <div className="carousel-item active position-relative">
-            <Image src={slider2} width={1920} height={543} className="d-block w-100" alt='1' />
+          <div className="carousel-item  position-relative">
+            <div className='d-block d-sm-none'>
+              <Image src={sliderMobile1} className="d-block w-100" alt='img-slider-mobile1' />
+            </div>
+            <div className='d-none d-sm-block'>
+              <Image src={slider2} className="d-block w-100" alt='img-slider-desk1' />
+            </div>
             <div className={sliderStyle.contentSlider1}>
               <h1>Dr. José Manuel Sivira</h1>
               <p>Cirujano Ortopedista</p>
@@ -47,15 +56,25 @@ export default function slider() {
             </div>
             {/* <img src={slider1} className="d-block w-100" alt="1" /> */}
           </div>
-          <div className="carousel-item  position-relative">
-            <Image src={slider1} width={1920} height={543} className="d-block w-100" alt='2' />
+          <div className="carousel-item active   position-relative">
+          <div className='d-block d-sm-none'>
+              <Image src={sliderMobile2} className="d-block w-100" alt='img-slider-mobile1' />
+            </div>
+            <div className='d-none d-sm-block'>
+              <Image src={slider1} className="d-block w-100" alt='img-slider-desk2' />
+            </div>
             <div className={sliderStyle.contentSlider2}>
-              <h1>Con mas de  <span>25 años</span> de experiencia</h1>
+              <h1>Alta experiencia en reemplazo articular</h1>
             </div>
             {/* <img src={slider2} className="d-block w-100" alt="2" /> */}
           </div>
-          <div className="carousel-item  position-relative">
-            <Image src={slider3} width={1920} height={543} className="d-block w-100" alt='3' />
+          <div className="carousel-item   position-relative">
+          <div className='d-block d-sm-none'>
+              <Image src={sliderMobile3} className="d-block w-100" alt='img-slider-mobile3' />
+            </div>
+          <div className='d-none d-sm-block'>
+            <Image src={slider3} className="d-block w-100" alt='img-slider-desk3' />
+          </div>
             <div className={sliderStyle.contentSlider3}>
               <h1>No te acostumbres al <span>DOLOR</span>, vivir con dolor no es realmente vivir</h1>
             </div>
