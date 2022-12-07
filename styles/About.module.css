@@ -6,16 +6,23 @@
     text-align: center;
     font-size: 35px;
     font-weight: 700;
-    color: white;
     padding-top: 90px;
     padding-bottom: 80px;
     font-family: 'Open Sans', sans-serif;
+    transition:.7s;
+    color: white;
+    position: relative;
+}
+.animation{
+    transform: translateY(0)!important;
+    opacity: 1!important;
 }
 .filaAbout{
     padding-bottom: 150px;
 }
 .contentPerfilAbout img{
     width: 100%;
+    transition:.7s;
     height: auto;
 }
 @media (max-width:1199px){
@@ -33,25 +40,21 @@
     padding-bottom: 63px;
     margin-top: 35px;
 }
-
 .contentComillas{
     margin-bottom: 32px;
 }
-
 .cuadroTexto h4{
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 24px;
     margin-bottom: 27px;
 }
-
 .lineAzul{
     background: #045CA4;
     width: 100%;
     height: 2.38px;
     margin-bottom: 30px;
 }
-
 .cuadroTexto p{
     font-family: 'Open Sans', sans-serif;
     color: #6b6b6b;

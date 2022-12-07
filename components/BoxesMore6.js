@@ -16,10 +16,10 @@ export default function BoxesMore6({ boxesClose6 }) {
                         </div>
                         <div className='container'>
                             <div className={infoStyle.contentImgBoxesMore}>
-                                <Image src={boxesImage6} alt='Necrosisavascular' />
+                                <Image src={boxesImage6} alt='Necrosis avascular' />
                             </div>
                             <div className={infoStyle.titleBoxMore}>
-                                <h2>NECROSISAVASCULAR</h2>
+                                <h2>NECROSIS AVASCULAR</h2>
                             </div>
                             <div className={infoStyle.descriptionBoxMore}>
                                 <p>La Necrosis Avascular es una enfermedad en la que el hueso de la cabeza femoral "muere" a consecuencia de una aliteración en su irrigación sanguínea. Este tipo de enfermedad provoca gran dolor, ya que es justamente la cabeza femoral, la parte redondeada del fémur, la que se articula con el acetábulo de la pelvis y la que soporta el peso del cuerpo. Cuando esto ocurre, el hueso muerto pierde la capacidad de soportar el peso del cuerpo y colapsa (se hunde) con la consiguiente perdida de la esfericidad de la cabeza femoral. El principal síntoma de la necrosis avascular es el dolor, que se presenta en la región inguinal. Sin embargo, en algunas ocasiones el dolor puede ser leve o no estar presente en las etapas iniciales de la enfermedad.<br /><br />

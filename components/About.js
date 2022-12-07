@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {use, useEffect, useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 import aboutStyle from '../styles/About.module.css';
 import Image from 'next/image';
 import perfilAbout from '../assets/image/perfil-conocenos.png';
 import comillasAbout from '../assets/image/comillas-about.png';
 
+
 export default function About() {
+
     return (
         <>
             <div className={aboutStyle.contentAbout} id='About'>
@@ -15,7 +18,7 @@ export default function About() {
                             <div className='row'>
                                 <div className='col-md-12 col-xl-6 ps-0'>
                                     <div className={aboutStyle.contentPerfilAbout}>
-                                        <Image src={perfilAbout} alt='perfil-about' />
+                                        <Image  src={perfilAbout} alt='perfil-about' />
                                     </div>
                                 </div>
                                 <div className='col-md-12 col-xl-6'>
@@ -25,7 +28,7 @@ export default function About() {
                                         </div>
                                         <h4>Dr. Jose Manuel Sivira</h4>
                                         <div className={aboutStyle.lineAzul}></div>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in laoreet purus. Ut pretium nulla sed felis finibus dictum. In hac habitasse platea dictumst. Etiam a orci quis purus fermentum interdum. Nulla ut volutpat lectus. Nunc condimentum odio sapien, sed iaculis velit tempus ut. Mauris luctus tincidunt ante sit amet convallis. Mauris dignissim vel sem vel tempus. Aliquam ultrices nec nisi non congue. Ut laoreet sapien magna, nec aliquam nibh elementum ut. Fusce eu risus vitae mauris blandit consequat. Suspendisse maximus nulla est. Nulla velit nibh, posuere ut tincidunt sit amet, pharetra at velit. Nunc pulvinar egestas nibh, tempor consectetur velit finibus et. Fusce luctus tellus nec sodales interdum. Suspendisse ultricies orci tellus, in condimentum massa laoreet sit amet.</p>
+                                        <p>Soy el Dr. José Manuel Sivira Médico Venezolano. Egresado de la Universidad de los Andes y con Fellow en Cirugía de reemplazos articulares en la Universidad Central de Venezuela. Especialista en el manejo de pacientes con desgaste articular (artrosis), y todas las patologías articulares asociadas que conlleven a la colocación de implantes en rodilla y cadera. Mi mayor compromiso es el cuidado y el bienestar de todos mis pacientes, basándome en técnicas de vanguardia y última generación, en reemplazo articular de cadera y rodilla con el objetivo de dar solución a enfermedades dolorosas. Asegurando la reinserción de mis pacientes a sus actividades cotidiana de la forma más rápida y segura.</p>
                                     </div>
                                 </div>
                             </div>

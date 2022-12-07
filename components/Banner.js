@@ -34,10 +34,10 @@ export default function Banner() {
                     <span className={bannerStyle.text}>CALIDAD</span>
                 </div>
                 <div className='col-sm-12 col-md-4 col-xl-4 text-center'>
-                <span className={bannerStyle.number}>25+</span>
+                <span className={bannerStyle.number}>100%</span>
                     <br/>
                     <br/>
-                    <span className={bannerStyle.text}>AÑOS DE EXPERIENCIA</span>
+                    <span className={bannerStyle.text}>EXPERIENCIA EN REEMPLAZO ARTICULAR</span>
                 </div>
             </div>
         </div>

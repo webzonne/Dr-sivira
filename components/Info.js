@@ -98,7 +98,7 @@ export default function Info() {
                                     <Image src={boxesImage2} alt='Abordaje-inferior-de-cadera' />
                                 </div>
                                 <div className={infoStyle.titleBox}>
-                                    <h4>Abordaje inferior de cadera</h4>
+                                    <h4>Abordaje anterior de cadera</h4>
                                 </div>
                                 <div className={infoStyle.descriptionBox}>
                                     <p>El abordaje anterior de cadera es una técnica qué ha ganado más popularidad dentro de los círculos de cirujanos ortopedistas, principalmente en los Estados Unidos, Europa y otras partes del mundo. Dentro de las ventajas qué ofrece este tipo de técnica, se pueden...</p>
@@ -129,7 +129,7 @@ export default function Info() {
                         <div className='col-lg-6 col-xl-4'>
                             <div className={infoStyle.boxes}>
                                 <div className={infoStyle.contentImagenBox}>
-                                    <Image src={boxesImage4} alt='necrosisavascular' />
+                                    <Image src={boxesImage4} alt='Artroplastia total de cadera' />
                                 </div>
                                 <div className={infoStyle.titleBox}>
                                     <h4>Artroplastia total de cadera</h4>
@@ -164,10 +164,10 @@ export default function Info() {
                         <div className='col-lg-6 col-xl-4'>
                             <div className={infoStyle.boxes}>
                                 <div className={infoStyle.contentImagenBox}>
-                                    <Image src={boxesImage6} alt='necrosisavascular' />
+                                    <Image src={boxesImage6} alt='Necrosis-Avascular' />
                                 </div>
                                 <div className={infoStyle.titleBox}>
-                                    <h4>Necrosisavascular</h4>
+                                    <h4>Necrosis Avascular</h4>
                                 </div>
                                 <div className={infoStyle.descriptionBox}>
                                 <p>La Necrosis Avascular es una enfermedad en la que el hueso de la cabeza femoral "muere" a consecuencia de una aliteración en su irrigación sanguínea. Este tipo de enfermedad provoca gran dolor, ya que es justamente la cabeza femoral, la parte redondeada del fémur...</p>

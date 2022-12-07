@@ -18,7 +18,7 @@ export default function Footer() {
                         <div className={footerStyle.logoFooterStyle}>
                             <Image src={logoFooter} alt='logo-footer' />
                         </div>
-                        <p className={footerStyle.descriptionLogo}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt tincidunt sem, sed bibendum diam maximus a. Phasellus </p>
+                        <p className={footerStyle.descriptionLogo}>El Cuidado de la Salud y el Bienestar de mis Pacientes siempre será mi mayor compromiso</p>
                     </div>
                     {/* CONTACTO */}
                     <div className={footerStyle.subdivFooter}>
@@ -48,9 +48,13 @@ export default function Footer() {
                         <h6 className={footerStyle.titleSubdiv}>INFORMACION</h6>
                         <div className={footerStyle.contentInfo}>
                             <p>Horario de atencion</p>
-                            <p>lunes a viernes de:</p>
-                            <p>7:30am-12:00pm</p>
-                            <p>2:30am-5:00pm</p>
+                            <p>lunes a viernes</p>
+                            <p>Apartir de la 1:00pm</p>
+                            <p>Clinica Santa Paula</p>
+                            <p>Martes y Jueves</p>
+                            <p>Apartir de la 9:00am</p>
+                            <p>Clínico Fénix Salud en San Bernardino</p>
+
                         </div>
                     </div>
                     {/* REDES SOCIALES */}
