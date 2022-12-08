@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import contactoStyle from '../styles/Contacto.module.css';
 import perfilContacto from '../assets/image/perfil-contacto.png';
 import Image from 'next/image';
@@ -6,6 +6,68 @@ import bgContact from '../assets/image/logo-fondo-contacto.png';
 
 
 export default function Contacto() {
+    const [inputs, setInputs] = useState({
+        name: '',
+        lastname: '',
+        mobile: '',
+        email: '',
+        message: '',
+    })
+    const [form, setForm] = useState('')
+
+    const handleChange = (e) => {
+        setInputs((prev) => ({
+            ...prev,
+            [e.target.id]: e.target.value,
+        }))
+    }
+
+    // RUDO
+    const onSubmitForm = async (e) => {
+        e.preventDefault()
+
+        if (inputs.name && inputs.lastname && inputs.mobile && inputs.email && inputs.message) {
+            setForm({ state: 'loading' })
+            try {
+                const res = await fetch(`api/contact`, {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json, text/plain, */*',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(inputs),
+                })
+
+                const { error } = await res.json()
+                const er = error
+                console.log(er)
+                if (error) {
+                    setForm({
+                        state: 'error',
+                        message: error,
+                    })
+                    return
+                }
+                setForm({
+                    state: 'success',
+                    message: 'Your message was sent successfully.',
+                })
+                setInput({
+                    name: '',
+                    lastname: '',
+                    mobile: '',
+                    email: '',
+                    message: '',
+                })
+            } catch (error) {
+                setForm({
+                    state: 'error',
+                    message: 'Something went wrong',
+                })
+            }
+        }
+    }
+    // TERMINA RUDO 
     return (
         <>
             <div className={contactoStyle.contentContactoBg}
@@ -34,29 +96,36 @@ export default function Contacto() {
                             </div>
                             <div className='col-md-12 col-lg-6 col-xl-6'>
                                 <div className={contactoStyle.contentFormContacto}>
-                                    <form>
+                                    <form onSubmit={(e) => onSubmitForm(e)}>
                                         <label>Nombre</label>
                                         <br />
-                                        <input type='text' name='name'></input>
+                                        <input onChange={handleChange} type='text' id='name' value={inputs.name} required></input>
                                         <br />
                                         <label>Apellido</label>
                                         <br />
-                                        <input type='text' name='apellido'></input>
+                                        <input onChange={handleChange} type='text' id='lastname' value={inputs.lastName} required></input>
                                         <br />
                                         <label>Telefono</label>
                                         <br />
-                                        <input type='telf' name='telf'></input>
+                                        <input onChange={handleChange} type='text' id='mobile' value={inputs.mobile} required></input>
                                         <br />
                                         <label>Correo</label>
                                         <br />
-                                        <input type='email' name='email'></input>
+                                        <input onChange={handleChange} type='email' id='email' value={inputs.email} required></input>
                                         <br />
                                         <label>Mensaje</label>
                                         <br />
-                                        <textarea></textarea>
+                                        <textarea onChange={handleChange} type='text' id='message' value={inputs.message} required></textarea>
                                         <br />
                                         <div>
-                                            <button>ENVIAR</button>
+                                            <input type='submit' className={contactoStyle.button} />
+                                            {form.state === 'loading' ? (
+                                                <div>Sending....</div>
+                                            ) : form.state === 'error' ? (
+                                                <div className={contactoStyle.sent}>Mensaje enviado</div>
+                                            ) : (
+                                                form.state === 'success' && <div>Sent successfully</div>
+                                            )}
                                         </div>
                                     </form>
                                 </div>

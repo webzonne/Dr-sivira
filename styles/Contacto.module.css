@@ -83,3 +83,17 @@
     color: white;
     background: #0454A3;
 }
+.button{
+    max-width:120px;
+    border: none;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    border-radius: 0!important;
+    height: 45px!important;
+    background: #0454A3!important; 
+}
+.sent{
+    color: rgb(28, 121, 28);
+    font-weight: 600;
+}

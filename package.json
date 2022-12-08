@@ -12,6 +12,7 @@
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.3",
     "next": "13.0.3",
+    "nodemailer": "^6.8.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-intersection-observer": "^9.4.1"
