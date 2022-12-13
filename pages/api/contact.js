@@ -11,10 +11,10 @@ import nodemailer from "nodemailer";
 export default async (req, res) => {
   const { name, lastname, mobile, email, message } = req.body;
   const transporter = nodemailer.createTransport({
-    service: 'gmail',
+    service: "gmail",
     auth: {
-    user: 'hectorsf21@gmail.com',
-    pass: 'xmnynmzwrkvorskb'
+    user: "hectorsf21@gmail.com",
+    pass: "xmnynmzwrkvorskb"
   }
   });
 
