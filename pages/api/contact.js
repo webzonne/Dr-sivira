@@ -4,39 +4,42 @@
 //       return res.status(200).json({ error: "" });
 //   }
 
-// GMAIL
+// // GMAIL
+
+import nodemailer from "nodemailer";
+
+export default async (req, res) => {
+  const { name, lastname, mobile, email, message } = req.body;
+  const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+    user: process.env.EMAIL,
+    pass: process.env.EMAIL_PASS
+  }
+  });
+
+// HOST
 
 // import nodemailer from "nodemailer";
 
 // export default async (req, res) => {
 //   const { name, lastname, mobile, email, message } = req.body;
 //   const transporter = nodemailer.createTransport({
-//     service: 'gmail',
+//     host: "mail.drsivira.com",
+//     port: 465,
+//     secure: true,
 //     auth: {
-//     user: 'hectorsf21@gmail.com',
-//     pass: 'xmnynmzwrkvorskb'
-//   }
+//       user: "info@drsivira.com",
+//       pass: "drsivira20522748"
+//     },
+//     tls:{
+//       rejectunauthorized:false
+//     }
 //   });
-
-// HOST
-
-  import nodemailer from "nodemailer";
-
-export default async (req, res) => {
-  const { name, lastname, mobile, email, message } = req.body;
-  const transporter = nodemailer.createTransport({
-    host: "mail.drsivira.com",
-    port: 465,
-    secure: false,
-    auth: {
-      user: 'info@drsivira.com',
-      pass: 'NgaB7;C_nj-l'
-    }
-  });
 
   try {
     await transporter.sendMail({
-      from:'info@drsivira.com',
+      from:"webzonne29@gmail.com",
       to: "webzonne29@gmail.com",
       subject: `PACIENTE  ${name} ${lastname}`,
       html: `<p>Tiene un mensaje para ti</p><br>
@@ -50,3 +53,4 @@ export default async (req, res) => {
   }
   return res.status(200).json({ error: "" });
 };
+
