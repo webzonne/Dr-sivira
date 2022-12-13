@@ -31,10 +31,10 @@
       auth: {
         user: "info@drsivira.com",
         pass: "drsivira20522748"
-      },
-      tls:{
-        rejectunauthorized:false
       }
+      // tls:{
+      //   rejectunauthorized:false
+      // }
     });
 
   try {
