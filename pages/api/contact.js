@@ -11,35 +11,35 @@ import nodemailer from "nodemailer";
 export default async (req, res) => {
   const { name, lastname, mobile, email, message } = req.body;
   const transporter = nodemailer.createTransport({
-    service: "gmail",
+    service: 'gmail',
     auth: {
-    user: "hectorsf21@gmail.com",
-    pass: "xmnynmzwrkvorskb"
-  }
+      user: 'hectorsf21@gmail.com',
+      pass: 'xmnynmzwrkvorskb'
+    }
   });
 
-// HOST
+  // HOST
 
-// import nodemailer from "nodemailer";
+  // import nodemailer from "nodemailer";
 
-// export default async (req, res) => {
-//   const { name, lastname, mobile, email, message } = req.body;
-//   const transporter = nodemailer.createTransport({
-//     host: "mail.drsivira.com",
-//     port: 465,
-//     secure: true,
-//     auth: {
-//       user: "",
-//       pass: ""
-//     },
-//     tls:{
-//       rejectunauthorized:false
-//     }
-//   });
+  // export default async (req, res) => {
+  //   const { name, lastname, mobile, email, message } = req.body;
+  //   const transporter = nodemailer.createTransport({
+  //     host: "mail.drsivira.com",
+  //     port: 465,
+  //     secure: true,
+  //     auth: {
+  //       user: "",
+  //       pass: ""
+  //     },
+  //     tls:{
+  //       rejectunauthorized:false
+  //     }
+  //   });
 
   try {
     await transporter.sendMail({
-      from:"webzonne29@gmail.com",
+      from: "webzonne29@gmail.com",
       to: "webzonne29@gmail.com",
       subject: `PACIENTE  ${name} ${lastname}`,
       html: `<p>Tiene un mensaje para ti</p><br>
@@ -51,6 +51,6 @@ export default async (req, res) => {
   } catch (error) {
     return res.status(500).json({ error: error.message || error.toString() });
   }
-  return res.status(200).json({ error:"" });
+  return res.status(200).json({ error: "" });
 };
 
