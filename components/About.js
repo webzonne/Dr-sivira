@@ -7,7 +7,8 @@ import comillasAbout from '../assets/image/comillas-about.png';
 
 
 export default function About() {
-    console.log(process.env.NEXT_PUBLIC_SMTP_USER)
+    const variable = `${process.env.NEXT_PUBLIC_SMTP_USER}`
+    console.log(variable)
     return (
         <>
             <div className={aboutStyle.contentAbout} id='About'>
