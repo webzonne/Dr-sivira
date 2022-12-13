@@ -9,8 +9,8 @@
 import nodemailer from "nodemailer";
 
 export default async (req, res) => {
-  const user = `${process.env.NEXT_PUBLIC_SMTP_USER}`;
-  const pass = `${process.env.NEXT_PUBLIC_SMTP_PASSWORD}`;
+  const user = `hectorsf21@gmail.com`;
+  const pass = `xmnynmzwrkvorskb`;
   console.log(user);
   console.log(pass);
   const { name, lastname, mobile, email, message } = req.body;
@@ -55,6 +55,6 @@ export default async (req, res) => {
   } catch (error) {
     return res.status(500).json({ error: error.message || error.toString() });
   }
-  return res.status(200).json({ error: "" });
+  return res.status(200).json({ error: `${pass}` });
 };
 
