@@ -9,12 +9,16 @@
 import nodemailer from "nodemailer";
 
 export default async (req, res) => {
+  const user = `${process.env.NEXT_PUBLIC_SMTP_USER}`;
+  const pass = `${process.env.NEXT_PUBLIC_SMTP_PASSWORD}`;
+  console.log(user);
+  console.log(pass);
   const { name, lastname, mobile, email, message } = req.body;
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-    user: `${process.env.NEXT_PUBLIC_SMTP_USER}`,
-    pass: `${process.env.NEXT_PUBLIC_SMTP_PASSWORD}`
+    user: user,
+    pass: pass
   }
   });
 
