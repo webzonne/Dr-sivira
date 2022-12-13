@@ -6,36 +6,36 @@
 
 // // GMAIL
 
-import nodemailer from "nodemailer";
+// import nodemailer from "nodemailer";
 
-export default async (req, res) => {
-  const { name, lastname, mobile, email, message } = req.body;
-  const transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-      user: `${process.env.SMTP_USER}`,
-      pass: `${process.env.SMTP_PASSWORD}` 
-    }
-  });
+// export default async (req, res) => {
+//   const { name, lastname, mobile, email, message } = req.body;
+//   const transporter = nodemailer.createTransport({
+//     service: 'gmail',
+//     auth: {
+//       user: `${process.env.SMTP_USER}`,
+//       pass: `${process.env.SMTP_PASSWORD}` 
+//     }
+//   });
 
   // HOST
 
-  // import nodemailer from "nodemailer";
+  import nodemailer from "nodemailer";
 
-  // export default async (req, res) => {
-  //   const { name, lastname, mobile, email, message } = req.body;
-  //   const transporter = nodemailer.createTransport({
-  //     host: "mail.drsivira.com",
-  //     port: 465,
-  //     secure: true,
-  //     auth: {
-  //       user: "",
-  //       pass: ""
-  //     },
-  //     tls:{
-  //       rejectunauthorized:false
-  //     }
-  //   });
+  export default async (req, res) => {
+    const { name, lastname, mobile, email, message } = req.body;
+    const transporter = nodemailer.createTransport({
+      host: "mail.drsivira.com",
+      port: 465,
+      secure: true,
+      auth: {
+        user: "info@drsivira.com",
+        pass: "drsivira20522748"
+      },
+      tls:{
+        rejectunauthorized:false
+      }
+    });
 
   try {
     await transporter.sendMail({
