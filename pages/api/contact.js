@@ -13,8 +13,8 @@ export default async (req, res) => {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-    user: process.env.NEXT_PUBLIC_SMTP_USER,
-    pass: process.env.NEXT_PUBLIC_SMTP_PASSWORD
+    user: `${process.env.NEXT_PUBLIC_SMTP_USER}`,
+    pass: `${process.env.NEXT_PUBLIC_SMTP_PASSWORD}`
   }
   });
 
