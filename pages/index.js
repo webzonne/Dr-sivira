@@ -12,9 +12,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Dr. Sivira</title>
-        <meta name="Dr Sivira" content="Pagina del Doctor José Manuel Sivira Cirujano Ortopedista
-
-Especialista en Rodilla y Cadera" />
+        <meta name="Dr Sivira" content="Pagina del Doctor José Manuel Sivira Cirujano Ortopedista Especialista en Rodilla y Cadera" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>

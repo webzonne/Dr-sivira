@@ -29,8 +29,8 @@ export default async (req, res) => {
 //     port: 465,
 //     secure: true,
 //     auth: {
-//       user: "info@drsivira.com",
-//       pass: "drsivira20522748"
+//       user: "",
+//       pass: ""
 //     },
 //     tls:{
 //       rejectunauthorized:false
