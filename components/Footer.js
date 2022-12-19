@@ -50,10 +50,10 @@ export default function Footer() {
                             <p>Horario de atencion</p>
                             <p>lunes a viernes</p>
                             <p>Apartir de la 1:00pm</p>
-                            <p>Clinica Santa Paula</p>
+                            <p>Grupo Médico Santa Paula en el Cafetal</p>
                             <p>Martes y Jueves</p>
                             <p>Apartir de la 9:00am</p>
-                            <p>Clínico Fénix Salud en San Bernardino</p>
+                            <p>Centro Clínico Fénix Salud en San Bernardino</p>
 
                         </div>
                     </div>
