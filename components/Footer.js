@@ -48,7 +48,7 @@ export default function Footer() {
                         <h6 className={footerStyle.titleSubdiv}>INFORMACIÓN</h6>
                         <div className={footerStyle.contentInfo}>
                             <p>Horario de atención</p>
-                            <p>lunes a viernes</p>
+                            <p>lunes y viernes</p>
                             <p>A partir de la 1:00pm</p>
                             <p>Grupo Médico Santa Paula en el Cafetal</p>
                             <p>Martes y Jueves</p>
