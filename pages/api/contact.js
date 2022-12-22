@@ -6,41 +6,41 @@
 
 // // GMAIL
 
-// import nodemailer from "nodemailer";
+import nodemailer from "nodemailer";
 
-// export default async (req, res) => {
-//   const { name, lastname, mobile, email, message } = req.body;
-//   const transporter = nodemailer.createTransport({
-//     service: 'gmail',
-//     auth: {
-//       user: `${process.env.SMTP_USER}`,
-//       pass: `${process.env.SMTP_PASSWORD}` 
-//     }
-//   });
+export default async (req, res) => {
+  const { name, lastname, mobile, email, message } = req.body;
+  const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: `${process.env.SMTP_USER}`,
+      pass: `${process.env.SMTP_PASSWORD}` 
+    }
+  });
 
   // HOST
 
-  import nodemailer from "nodemailer";
+  // import nodemailer from "nodemailer";
 
-  export default async (req, res) => {
-    const { name, lastname, mobile, email, message } = req.body;
-    const transporter = nodemailer.createTransport({
-      host: "mail.drsivira.com",
-      port: 465,
-      secure: true,
-      auth: {
-        user: "info@drsivira.com",
-        pass: "drsivira20522748"
-      }
-      // tls:{
-      //   rejectunauthorized:false
-      // }
-    });
+  // export default async (req, res) => {
+  //   const { name, lastname, mobile, email, message } = req.body;
+  //   const transporter = nodemailer.createTransport({
+  //     host: "mail.drsivira.com",
+  //     port: 465,
+  //     secure: true,
+  //     auth: {
+  //       user: "info@drsivira.com",
+  //       pass: "drsivira20522748"
+  //     }
+  //     // tls:{
+  //     //   rejectunauthorized:false
+  //     // }
+  //   });
 
   try {
     await transporter.sendMail({
-      from: "webzonne29@gmail.com",
-      to: "webzonne29@gmail.com",
+      from:"infodrsivira@gmail.com",
+      to: "hectorsf21@gmail.com",
       subject: `PACIENTE  ${name} ${lastname}`,
       html: `<p>Tiene un mensaje para ti</p><br>
         <p><strong>Email del paciente: </strong> ${email}</p><br>

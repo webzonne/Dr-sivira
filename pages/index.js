@@ -4,7 +4,7 @@ import Slider from '../components/Slider'
 import Footer from '../components/Footer'
 import About from '../components/About'
 import Contacto from '../components/Contacto'
-import Banner from '../components/Banner'
+import BannerNew from '../components/BannerNew'
 import Info from '../components/Info'
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
       <main>
         <Slider/>
         <Info/>
-        <Banner/>
+        <BannerNew/>
         <About/>
         <Contacto/>
         <Footer/>

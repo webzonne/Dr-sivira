@@ -1,0 +1,33 @@
+.boxText{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.0312) 100%);
+    border-radius: 10px;
+    position: relative;
+    padding: 40px;
+}
+.boxText h2{
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    max-width: 834px;
+    margin: auto;
+}
+.contentComillas img{
+    position: absolute;
+    top: 20px;
+    left:40px;
+}
+.contentCirculo img{
+    position: absolute;
+    right: 25px;
+    bottom: 20px;
+}
+@media (max-width:860px){
+    .boxText h2{
+        font-size: 28px;
+    }
+    .contentComillas img{
+        top: 5px;
+        left:10px;
+    }
+}
