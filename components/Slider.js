@@ -2,7 +2,9 @@ import React from 'react'
 import Image from 'next/image';
 // IMAGENES
 // slider 1
-import slider1 from '../assets/image/slider-1.jpg'
+import slider1 from '../assets/image/slider-1.jpg';
+import sliderMobilem from '../assets/image/slider-mobilem.jpg';
+import sliderMobilem2 from '../assets/image/slider-mobilem2.jpg';
 import sliderMobile1 from '../assets/image/slider-mobile1.jpg';
 import sliderSm1 from '../assets/image/slider-sm1.jpg';
 import sliderMd1 from '../assets/image/slider-md1.jpg';
@@ -65,8 +67,16 @@ export default function slider() {
         <div className="carousel-inner">
           {/* SLIDER 1 */}
           <div className="carousel-item active  position-relative">
-            <div className='d-block d-sm-none d-md-none'>
-              <Image src={sliderMobile1} className="d-block w-100" alt='img-slider-mobile1' />
+            <div className={sliderStyle.cel}>
+              <Image src={sliderMobilem} alt='img-sliderMobilem'/>
+            </div>
+            <div className={sliderStyle.cel2}>
+              <Image src={sliderMobilem2} alt='img-sliderMobilem'/>
+            </div>
+            <div className={sliderStyle.mobileMin}>
+              <div className='d-block d-sm-none d-md-none'>
+                <Image src={sliderMobile1} className="d-block w-100" alt='img-slider-mobile1' />
+              </div>
             </div>
             <div className='d-none d-sm-block d-md-none'>
               <Image src={sliderSm1} className="d-block w-100" alt='img-slider-sm1' />

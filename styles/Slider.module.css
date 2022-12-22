@@ -49,6 +49,26 @@
         font-size:16px;
     }
 }
+
+@media (max-width:400px){
+    .mobileMin{
+        display: none;
+    }
+}
+@media (min-width:370px){
+    .cel{
+        display: none;
+    }
+}
+.cel2{
+    display: none;
+}
+@media screen and (min-width: 370px) and (max-width:400px){
+    .cel2{
+        display: block;
+    }
+}
+
 /* SLIDER 2 */
 .contentSlider2{
     position: absolute;
