@@ -87,7 +87,7 @@ export default function Info() {
                                     <p>Muchas veces tener <strong>DOLOR</strong> en nuestras articulares, no se debe a caídas, accidentes, golpes etc. Existen otros factores que pueden producirlo, como es el caso del <strong>DESGASTE ARTICULAR</strong>, el cual es una patología degenerativa de los huesos que comienza por la...</p>
                                 </div>
                                 <div className={infoStyle.buttonBox}>
-                                    <button onClick={boxesMore1}>Ver mas..</button>
+                                    <button onClick={boxesMore1}>Ver más..</button>
                                 </div>
                             </div>
                         </div>
@@ -104,7 +104,7 @@ export default function Info() {
                                     <p>El abordaje anterior de cadera es una técnica qué ha ganado más popularidad dentro de los círculos de cirujanos ortopedistas, principalmente en los Estados Unidos, Europa y otras partes del mundo. Dentro de las ventajas qué ofrece este tipo de técnica, se pueden...</p>
                                 </div>
                                 <div className={infoStyle.buttonBox}>
-                                    <button onClick={boxesMore2}>Ver mas..</button>
+                                    <button onClick={boxesMore2}>Ver más..</button>
                                 </div>
                             </div>
                         </div>
@@ -121,7 +121,7 @@ export default function Info() {
                                     <p>La Gonartrosis es un término que se refiere a la enfermedad degenerativa de la articulación de la rodilla; va ligada al término de osteoartritis, un concepto más general que involucra desgaste articular en el cuerpo humano. En la gonartrosis, el cartílago...</p>
                                 </div>
                                 <div className={infoStyle.buttonBox}>
-                                    <button onClick={boxesMore3}>Ver mas..</button>
+                                    <button onClick={boxesMore3}>Ver más..</button>
                                 </div>
                             </div>
                         </div>
@@ -139,7 +139,7 @@ export default function Info() {
                                     <strong>¿Pero que es un reemplazo total de cadera?</strong>...</p>
                                 </div>
                                 <div className={infoStyle.buttonBox}>
-                                    <button onClick={boxesMore4}>Ver mas..</button>
+                                    <button onClick={boxesMore4}>Ver más..</button>
                                 </div>
                             </div>
                         </div>
@@ -156,7 +156,7 @@ export default function Info() {
                                 <p>La artroplastia total de rodilla, también conocido como reemplazo total de rodilla, es una cirugía ortopédica con una tasa de éxitos muy alta, los pacientes consiguen resultados de buenos a excelentes, el cual produce una gran satisfacción al paciente...</p>
                                 </div>
                                 <div className={infoStyle.buttonBox}>
-                                    <button onClick={boxesMore5}>Ver mas..</button>
+                                    <button onClick={boxesMore5}>Ver más..</button>
                                 </div>
                             </div>
                         </div>
@@ -173,7 +173,7 @@ export default function Info() {
                                 <p>La Necrosis Avascular es una enfermedad en la que el hueso de la cabeza femoral "muere" a consecuencia de una aliteración en su irrigación sanguínea. Este tipo de enfermedad provoca gran dolor, ya que es justamente la cabeza femoral, la parte redondeada del fémur...</p>
                                 </div>
                                 <div className={infoStyle.buttonBox}>
-                                    <button onClick={boxesMore6}>Ver mas..</button>
+                                    <button onClick={boxesMore6}>Ver más..</button>
                                 </div>
                             </div>
                         </div>

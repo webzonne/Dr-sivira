@@ -32,7 +32,7 @@ export default function Navbar() {
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#About">
-              CONÓCENOS
+                QUIÉN SOY
             </a>
           </li>
           <li className="nav-item">

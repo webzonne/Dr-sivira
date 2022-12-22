@@ -13,7 +13,7 @@ export default function About() {
         <>
             <div className={aboutStyle.contentAbout} id='About'>
                 <div className={aboutStyle.contentTitle}>
-                    <h2>QUIEN SOY</h2>
+                    <h2>QUIÉN SOY</h2>
                     <div className='container'>
                         <div className={aboutStyle.filaAbout}>
                             <div className='row'>
