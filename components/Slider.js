@@ -64,7 +64,7 @@ export default function slider() {
         </div>
         <div className="carousel-inner">
           {/* SLIDER 1 */}
-          <div className="carousel-item  position-relative">
+          <div className="carousel-item active  position-relative">
             <div className='d-block d-sm-none d-md-none'>
               <Image src={sliderMobile1} className="d-block w-100" alt='img-slider-mobile1' />
             </div>
@@ -123,7 +123,7 @@ export default function slider() {
             {/* <img src={slider3} className="d-block w-100" alt="3" /> */}
           </div>
           {/* SLIDER 4 */}
-          <div className="carousel-item active position-relative">
+          <div className="carousel-item  position-relative">
             <div className='d-block d-sm-none'>
               <Image src={sliderMobile4} className="d-block w-100" alt='img-slider-mobile1' />
             </div>
