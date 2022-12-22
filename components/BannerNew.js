@@ -3,6 +3,7 @@ import Image from 'next/image';
 import bannerNewStyle from '../styles/BannerNew.module.css';
 import bgBanner from '../public/fondo-banner.jpg';
 import comillasBanner from '../assets/image/comillas-banner.png';
+import comillasBanner2 from '../assets/image/comillas-banner2.png';
 import circuloBanner from '../assets/image/circulo-banner.png';
 export default function Banner() {
   return (
@@ -28,6 +29,9 @@ export default function Banner() {
                     <Image src={comillasBanner} alt='icon-comillas' />
                 </div>
                 <h2>Cirujano de cadera y rodilla con calidad experiencia y humanidad</h2>
+                <div className={bannerNewStyle.contentComillas2}>
+                    <Image src={comillasBanner2} alt='icon-comillas2' />
+                </div>
                 <div className={bannerNewStyle.contentCirculo}>
                     <Image src={circuloBanner} alt='icon-circulo' />
                 </div>

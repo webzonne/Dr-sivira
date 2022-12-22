@@ -15,13 +15,74 @@
 .contentComillas img{
     position: absolute;
     top: 20px;
-    left:40px;
+    left:240px;
+}
+.contentComillas2 img{
+    position: absolute;
+    right:352px;
+    bottom:44px;  
 }
 .contentCirculo img{
     position: absolute;
     right: 25px;
     bottom: 20px;
 }
+
+@media (max-width:1393px){
+    .contentComillas img{
+        position: absolute;
+        top: 20px;
+        left:169px;
+    }
+    .contentComillas2 img{
+        position: absolute;
+        right:285px;
+        bottom:44px;  
+    }
+}
+
+@media (max-width:1196px){
+    .contentComillas img{
+        position: absolute;
+        top: 20px;
+        left:78px;
+    }
+    .contentComillas2 img{
+        position: absolute;
+        right:186px;
+        bottom:44px;  
+    }
+}
+
+@media (max-width:991px){
+    .contentComillas img{
+        position: absolute;
+        top: 20px;
+        left:31px;
+    }
+    .contentComillas2 img{
+        position: absolute;
+        right:16px;
+        bottom:44px;  
+    }
+}
+
+@media (max-width:764px){
+    .contentComillas2 img{
+        position: absolute;
+        right:-6px;
+        bottom:44px;  
+    }
+}
+
+@media (max-width:532px){
+    .contentComillas2 img{
+        position: absolute;
+        right:0px;
+        bottom:44px;  
+    }
+}
+
 @media (max-width:860px){
     .boxText h2{
         font-size: 28px;
@@ -31,3 +92,4 @@
         left:10px;
     }
 }
+
